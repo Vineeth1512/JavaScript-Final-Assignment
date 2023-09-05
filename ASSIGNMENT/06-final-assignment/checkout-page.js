@@ -67,6 +67,6 @@ function removeFromCart(i) {
 
 
 function placeOrder() {
-    location.assign("http://127.0.0.1:5500/ASSIGNMENT/06-final-assignment/order-page.html")
-
+    location.assign("http://127.0.0.1:5500/JavaScript-Final-Assignment/ASSIGNMENT/06-final-assignment/order-page.html")
+    localStorage.clear();
 }; 

@@ -2,7 +2,7 @@ var headerElement = document.getElementById("topbar");
 headerElement.innerHTML += ` 
 <div id="left-menu">
 <div id="logo">
-<a href="http://127.0.0.1:5500/ASSIGNMENT/06-final-assignment/home-page.html">
+<a href="http://127.0.0.1:5500/JavaScript-Final-Assignment/ASSIGNMENT/06-final-assignment/home-page.html">
 <span>Shop</span>lane</a>
 </div>
 <a href="#clothing-section">Clothing</a>
@@ -15,7 +15,7 @@ headerElement.innerHTML += `
 <div id="right-menu">
 <div id="cart-wrapper">
     <p id="cart-count">0</p>
-    <a href="http://127.0.0.1:5500/ASSIGNMENT/06-final-assignment/checkout-page.html"><i class="fas fa-shopping-cart"></i></a>
+    <a href="http://127.0.0.1:5500/JavaScript-Final-Assignment/ASSIGNMENT/06-final-assignment/checkout-page.html"><i class="fas fa-shopping-cart"></i></a>
 </div>
 <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg" />
 </div>
