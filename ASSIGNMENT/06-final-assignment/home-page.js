@@ -56,8 +56,8 @@ $.get("https://5d76bf96515d1a0014085cf9.mockapi.io/product", function (response)
 var productElement = document.getElementById("product");
 
 function cartFunction(id){
-   // console.log("cartFunction is cclicked")
-    location.assign("http://127.0.0.1:5500/ASSIGNMENT/06-final-assignment/product-details.html?p="+id);
+   // console.log("cartFunction is clicked")
+    location.assign("http://127.0.0.1:5500/JavaScript-Final-Assignment/ASSIGNMENT/06-final-assignment/product-details.html?p="+id);
 
 $.get("https://5d76bf96515d1a0014085cf9.mockapi.io/product/"+id, function (response) {
     // console.log(response);

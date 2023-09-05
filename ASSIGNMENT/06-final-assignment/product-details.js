@@ -82,6 +82,11 @@ function addCart(data) {
     for (var i = 0; i < productsFromLocalStorage.length; i++) {
         checkOutCard.innerHTML = productsFromLocalStorage.length;
     }
+
+    $('#btn-add-to-cart').addClass('bigger');
+    setTimeout(function () {
+        $('#btn-add-to-cart').removeClass('bigger');
+    }, 200)
 }
 
 
@@ -95,12 +100,6 @@ function applyActiveCard(id) {
     var productImageElement = document.getElementById("img" + id);
     productPreviewElement.src = productImageElement.src;
 }
-document.getElementById("btn-add-to-cart").click(function () {
-    $('#btn-add-to-cart').addClass('bigger');
-    setTimeout(function () {
-        $('#btn-add-to-cart').removeClass('bigger');
-    }, 200)
 
-})
 
 

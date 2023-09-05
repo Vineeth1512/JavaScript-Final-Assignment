@@ -3,3 +3,7 @@
 
 // })
 
+
+// var productsFromLocalStorage = JSON.parse(localStorage.getItem("product-lists"));
+// console.log(productsFromLocalStorage.localStorage.clear());
+// productsFromLocalStorage.localStorage.clear();
