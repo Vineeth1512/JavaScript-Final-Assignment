@@ -101,34 +101,58 @@ $.get("https://5d76bf96515d1a0014085cf9.mockapi.io/product/"+id, function (respo
 
 }
 
-$(document).ready(function(){
-    $('.center').slick({
-        centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-    })
+
+// $(document).ready(function(){
+//     $('.center').slick({
+//         centerMode: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//         dots: true,
+//         arrows: false,
+//         responsive: [
+//           {
+//             breakpoint: 768,
+//             settings: {
+//               arrows: false,
+//               centerMode: true,
+//               centerPadding: '40px',
+//               slidesToShow: 3
+//             }
+//           },
+//           {
+//             breakpoint: 480,
+//             settings: {
+//               arrows: false,
+//               centerMode: true,
+//               centerPadding: '40px',
+//               slidesToShow: 1
+//             }
+//           }
+//         ]
+//     })
+// })
+
+
+//carousel
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+  items:1,
+  loop:true,
+  margin :10,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true
 })
+
+// owl.owlCarousel({
+//     items:1, 
+//   // items change number for slider display on desktop
+  
+//     loop:true,
+//     margin:10,
+//     autoplay:true,
+//     autoplayTimeout:1000,
+//     autoplayHoverPause:true
+// });

@@ -78,11 +78,14 @@ function addCart(data) {
         localStorage.setItem("product-lists", JSON.stringify(productsFromLocalStorage))
 
     }
-    var checkOutCard = document.getElementById("cart-count")
-    for (var i = 0; i < productsFromLocalStorage.length; i++) {
-        checkOutCard.innerHTML = productsFromLocalStorage.length;
+    var checkOutCard = document.getElementById("cart-count");
+    if(productsFromLocalStorage){
+        for (var i = 0; i < productsFromLocalStorage.length; i++) {
+            checkOutCard.innerHTML = productsFromLocalStorage.length;
+        }
+    }else{
+        checkOutCard.innerHTML ="1";
     }
-
     $('#btn-add-to-cart').addClass('bigger');
     setTimeout(function () {
         $('#btn-add-to-cart').removeClass('bigger');
